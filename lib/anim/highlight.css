@@ -1,0 +1,1 @@
+@keyframes highlight{from{background-color:rgba(255,255,153,1);}to{background-color:rgba(255,255,153,0);}}.anim_highlight{animation-name:highlight;margin:-5px;background-image:none;border:5px solid #ffff99;}

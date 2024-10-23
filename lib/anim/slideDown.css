@@ -1,0 +1,1 @@
+@keyframes slideDown-In{from{transform:translate3d(0,100%,0);visibility:visible;}to{transform:translate3d(0,0,0);}}.anim_slideDown-In{animation-name:slideDown-In;}@keyframes slideDown-Out{from{transform:translate3d(0,0,0);}to{visibility:hidden;transform:translate3d(0,100%,0);}}.anim_slideDown-Out{animation-name:slideDown-Out;}

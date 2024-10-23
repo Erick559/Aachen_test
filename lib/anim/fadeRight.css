@@ -1,0 +1,1 @@
+@keyframes fadeRight-In{from{opacity:0;transform:translate3d(100%,0,0);}to{opacity:1;transform:translate3d(0,0,0);}}.anim_fadeRight-In{animation-name:fadeRight-In;}@keyframes fadeRight-Out{from{opacity:1;}to{opacity:0;transform:translate3d(100%,0,0);}}.anim_fadeRight-Out{animation-name:fadeRight-Out;}

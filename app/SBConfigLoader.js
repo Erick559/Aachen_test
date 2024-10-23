@@ -1,0 +1,1 @@
+define(["css!sb4_module/sb","sb4_module/sb"],function(sbcss,sbjs) { });

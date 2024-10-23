@@ -1,0 +1,1 @@
+@keyframes slideRight-In{from{transform:translate3d(100%,0,0);visibility:visible;}to{transform:translate3d(0,0,0);}}.anim_slideRight-In{animation-name:slideRight-In;}@keyframes slideRight-Out{from{transform:translate3d(0,0,0);}to{visibility:hidden;transform:translate3d(100%,0,0);}}.anim_slideRight-Out{animation-name:slideRight-Out;}

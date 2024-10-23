@@ -1,0 +1,1 @@
+@keyframes scale-In{0%{transform:scale(0);opacity:0;}100%{transform:scale(1);opacity:1;}}.anim_scale-In{animation-name:scale-In;}@keyframes scale-Out{0%{transform:scale(1);opacity:1;}100%{transform:scale(0);opacity:0;}}.anim_scale-Out{animation-name:scale-Out;}

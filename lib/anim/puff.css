@@ -1,0 +1,1 @@
+@keyframes puff-In{0%{transform:scale(1.5);opacity:0;}100%{transform:scale(1);opacity:1;}}.anim_puff-In{animation-name:puff-In;}@keyframes puff-Out{0%{transform:scale(1);opacity:1;}100%{transform:scale(1.5);opacity:0;}}.anim_puff-Out{animation-name:puff-Out;}

@@ -1,0 +1,1 @@
+@keyframes slideUp-In{from{transform:translate3d(0,-100%,0);visibility:visible;}to{transform:translate3d(0,0,0);}}.anim_slideUp-In{animation-name:slideUp-In;}@keyframes slideUp-Out{from{transform:translate3d(0,0,0);}to{visibility:hidden;transform:translate3d(0,-100%,0);}}.anim_slideUp-Out{animation-name:slideUp-Out;}

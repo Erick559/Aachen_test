@@ -1,0 +1,1 @@
+@keyframes zoom-In{from{opacity:0;transform:scale3d(0.3,0.3,0.3);}50%{opacity:1;}}.anim_zoom-In{animation-name:zoom-In;}@keyframes zoom-Out{from{opacity:1;}50%{opacity:0;transform:scale3d(0.3,0.3,0.3);}to{opacity:0;}}.anim_zoom-Out{animation-name:zoom-Out;}

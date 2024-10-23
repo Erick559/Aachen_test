@@ -1,0 +1,1 @@
+@keyframes headShakeY{0%{transform:translateY(0);}6.5%{transform:translateY(-6px) rotateX(-9deg);}18.5%{transform:translateY(5px) rotateX(7deg);}31.5%{transform:translateY(-3px) rotateX(-5deg);}43.5%{transform:translateY(2px) rotateX(3deg);}50%{transform:translateY(0);}}.anim_headShakeY{animation-timing-function:ease-in-out;animation-name:headShakeY;}

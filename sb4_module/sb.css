@@ -1,0 +1,41 @@
+
+body{
+    /*change body bg color*/
+    /*background-color:#ff0000!important;*/
+    /*background-image: none!important;*/
+
+     /*change body bg image*/
+    /*background-image: url()!important;*/
+}
+
+.com_smartbuilder_axon_widget_frame{
+    /* change frame bg color */
+     /*background-color: #ff0000 !important;*/
+     /*background-image: none!important;*/
+
+    /*change frame bg image*/
+    /*background-image: url()!important;*/
+}
+
+
+/*
+// add shadow to all text inputs
+div.com_smartbuilder_axon_widget_input_textentry textarea:focus { 
+    outline: none !important;
+    box-shadow: 0 0 10px #719ECE;
+}
+
+// add border color to this input text
+#iP540CTOCPKQPRO4CUSK1DRAAL0 textarea { 
+    outline: none !important;
+    border-color: #009E00 !important;
+    border-width: 3px !important;
+}
+
+demo-sbconfig-regestered-function
+#iP540CTOCPKQPRO4CUSK1DRAAL0 textarea:focus { 
+    outline: none !important;
+    border-color: #009E00;
+    box-shadow: 0 0 30px #ff9ECE;
+}
+*/
