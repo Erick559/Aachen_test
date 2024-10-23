@@ -28,6 +28,54 @@
 </head>
 <body>
 <div id="SBContentWrapper" style="overflow: hidden;"></div>
+
+
+<script>
+    // Unified function to toggle fullscreen mode
+    function toggleFullscreen(iframe) {
+        // Check if the document is already in fullscreen mode
+        if (!document.fullscreenElement &&    // Standard browsers
+            !document.mozFullScreenElement && // Firefox
+            !document.webkitFullscreenElement && // Chrome, Safari, Opera
+            !document.msFullscreenElement) { // IE/Edge
+            // Enter fullscreen mode
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) { // Firefox
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) { // Chrome, Safari, Opera
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) { // IE/Edge
+                iframe.msRequestFullscreen();
+            }
+        } else {
+            // Exit fullscreen mode
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.mozCancelFullScreen) { // Firefox
+                document.mozCancelFullScreen();
+            } else if (document.webkitExitFullscreen) { // Chrome, Safari, Opera
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { // IE/Edge
+                document.msExitFullscreen();
+            }
+        }
+    }
+
+    // Listen for messages from the iframe
+    window.addEventListener('message', function(event) {
+        // For security, check the origin of the message if necessary (optional)
+        // if (event.origin !== 'http://your-domain.com') return;
+
+        // If the message is 'fullscreen', toggle fullscreen for the iframe
+        if (event.data === 'fullscreen') {
+            const iframe = document.getElementById('SBContentWrapper');
+            toggleFullscreen(iframe);
+        }
+    });
+</script>
+
+
 <script src="sb-init.js?bust=1.0.0.202404300805_1729701269845" data-wrapper-id="SBContentWrapper" data-config='{ "scaleMobile": 2,"scaleDesktop": 2}'></script>
 </body>
 
