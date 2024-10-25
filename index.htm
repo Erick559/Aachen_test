@@ -48,9 +48,6 @@
             } else if (iframe.msRequestFullscreen) { // IE/Edge
                 iframe.msRequestFullscreen();
             }
-
-            iframeChild.style.width = "100vw"
-            iframeChild.style.height = '100vh'
         } else {
             // Exit fullscreen mode
             if (document.exitFullscreen) {
@@ -62,9 +59,6 @@
             } else if (document.msExitFullscreen) { // IE/Edge
                 document.msExitFullscreen();
             }
-
-            iframeChild.style.width = ""
-            iframeChild.style.height = ''
         }
     }
 
