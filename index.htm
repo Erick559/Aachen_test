@@ -32,7 +32,7 @@
 
 <script>
     // Unified function to toggle fullscreen mode
-    function toggleFullscreen(iframe) {
+    function toggleFullscreen(iframe,iframeChild) {
         // Check if the document is already in fullscreen mode
         if (!document.fullscreenElement &&    // Standard browsers
             !document.mozFullScreenElement && // Firefox
@@ -49,8 +49,8 @@
                 iframe.msRequestFullscreen();
             }
 
-            iframe.style.width = "100vw"
-            iframe.style.height = '100vh'
+            iframeChild.style.width = "100vw"
+            iframeChild.style.height = '100vh'
         } else {
             // Exit fullscreen mode
             if (document.exitFullscreen) {
@@ -63,8 +63,8 @@
                 document.msExitFullscreen();
             }
 
-            iframe.style.width = ""
-            iframe.style.height = ''
+            iframeChild.style.width = ""
+            iframeChild.style.height = ''
         }
     }
 
@@ -76,7 +76,8 @@
         // If the message is 'fullscreen', toggle fullscreen for the iframe
         if (event.data === 'fullscreen') {
             const iframe = document.getElementById('SBContentWrapper');
-            toggleFullscreen(iframe);
+            const iframeChild = document.querySelector('iframe');
+            toggleFullscreen(iframe,iframeChild);
         }
     });
 </script>
