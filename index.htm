@@ -21,7 +21,8 @@
             position: absolute;
             left: 0px;
             top: 0px;
-            
+            bottom: 0;
+            right: 0;
         }
     </style>
     
@@ -70,8 +71,7 @@
         // If the message is 'fullscreen', toggle fullscreen for the iframe
         if (event.data === 'fullscreen') {
             const iframe = document.getElementById('SBContentWrapper');
-            const iframeChild = document.querySelector('iframe');
-            toggleFullscreen(iframeChild);
+            toggleFullscreen(iframe);
         }
     });
 </script>
