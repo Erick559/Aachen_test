@@ -32,7 +32,7 @@
 
 <script>
     // Unified function to toggle fullscreen mode
-    function toggleFullscreen(iframe,iframeChild) {
+    function toggleFullscreen(iframe) {
         // Check if the document is already in fullscreen mode
         if (!document.fullscreenElement &&    // Standard browsers
             !document.mozFullScreenElement && // Firefox
@@ -71,7 +71,7 @@
         if (event.data === 'fullscreen') {
             const iframe = document.getElementById('SBContentWrapper');
             const iframeChild = document.querySelector('iframe');
-            toggleFullscreen(iframe,iframeChild);
+            toggleFullscreen(iframeChild);
         }
     });
 </script>
